@@ -1,0 +1,173 @@
+:root {
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    border: 1px rgba(128, 128, 128, 0.158) solid;
+
+    height: 50%;
+    width: 25%;
+}
+
+.logo-dot {
+    text-align: center;
+    padding-top: 10%;
+
+
+    height: 55%;
+    aspect-ratio: 1 / 1;
+    background-color: #21a6e3;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+.title-icon {
+    grid-area: ti;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title-icon__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    height: 80%;
+    width: 25%;
+}
+
+img {
+    height: 70%;
+    width: 70%;
+}
+
+.linea {
+    grid-area: ln;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linea__limitada {
+    width: 90%;
+}
+
+.inputs {
+    grid-area: ip;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    height: 80%;
+    width: 90%;
+}
+
+input {
+    width: 100%;
+    height: 40%;
+}
+
+.boton {
+    grid-area: bt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton__entrar {
+    width: 30%;
+    height: 70%;
+
+    border-radius: 5%;
+    background-color: rgb(26, 59, 135);
+    color: white;
+
+    font-size: 0.8rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer {
+    grid-area: ft;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[class ^= "footer__link"] {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    font-size: 10px;
+}
+
+.footer__link--crear {
+    display: flex;
+    justify-content: left;
+    padding-left: 2%;
+}
+
+.footer__link--recuperar {
+    display: flex;
+    justify-content: right;
+    padding-right: 2%;
+}
+
+/* .login > div {
+    border: 1px red dashed;
+}
+
+.login > div > div {
+    border: 1px yellow dashed;
+} */
+
+
+.login {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    
+    grid-template-areas:
+      "ti ti ti ti"
+      "ti ti ti ti"
+      "ti ti ti ti"
+      "ln ln ln ln"
+      "ip ip ip ip"
+      "ip ip ip ip"
+      "ip ip ip ip"
+      "bt bt bt bt"
+      "ft ft ft ft";
+  }
